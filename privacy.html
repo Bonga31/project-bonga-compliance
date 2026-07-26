@@ -59,53 +59,69 @@
 </header>
 <main>
 <h1>Privacy Policy</h1>
-<p>Effective date: 25 July 2026</p>
-<p>Project Bonga is a local desktop API client operated by Matthew Owen in</p>
-<p>the United Kingdom.</p>
+<p>Effective date: 27 July 2026</p>
+<p>Project Bonga is a local Windows desktop API client operated by</p>
+<p>Matthew Owen in the United Kingdom.</p>
 <h2>YouTube API Services</h2>
 <p>Project Bonga uses YouTube API Services. Use of Project Bonga is also subject</p>
 <p>to the YouTube Terms of Service:</p>
 <p><a href="https://www.youtube.com/t/terms">https://www.youtube.com/t/terms</a></p>
 <p>Google&#x27;s Privacy Policy is available at:</p>
 <p><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
-<h2>Information accessed</h2>
+<h2>Information accessed and stored</h2>
 <p>Project Bonga uses OAuth 2.0 authorisation to upload creator-approved videos to</p>
-<p>the authorising user&#x27;s YouTube channel. It may process:</p>
+<p>the authorising user&#x27;s own YouTube channel. It may process:</p>
 <ul>
-<li>the authorised YouTube channel identity;</li>
-<li>the local video selected for upload;</li>
-<li>video metadata approved by the user, including title, description, tags,</li>
+<li>the local video selected by the user;</li>
+<li>the title, description, tags, category and audience setting defined by the</li>
 </ul>
-<p>category, audience setting, privacy setting and scheduled publication time;</p>
+<p>user;</p>
 <ul>
-<li>the video ID and upload status returned by YouTube.</li>
+<li>the selected visibility and optional scheduled publication time;</li>
+<li>the video ID and upload status returned by YouTube;</li>
+<li>a local record of policy acceptance and OAuth authorisation.</li>
 </ul>
-<p>Project Bonga does not request or store the user&#x27;s Google or YouTube password.</p>
+<p>Project Bonga does not request, collect or store the user&#x27;s Google or YouTube</p>
+<p>password. It does not collect viewer identities, viewing history, location,</p>
+<p>contacts or unrelated Google account information.</p>
 <h2>Purpose</h2>
-<p>The information is used only to upload, schedule and record videos on the</p>
-<p>authorising user&#x27;s own YouTube channel.</p>
-<h2>Storage</h2>
+<p>The information is used only to validate, upload, schedule and locally record</p>
+<p>videos on the authorising user&#x27;s own YouTube channel.</p>
+<h2>User consent and control</h2>
+<p>Before first use, Project Bonga displays links to this Privacy Policy and the</p>
+<p>Terms of Use and requires the user to type `I AGREE`.</p>
+<p>Before every YouTube write action, Project Bonga displays the selected video,</p>
+<p>title, full description, audience setting, visibility, schedule and</p>
+<p>subscriber-notification choice. The user must enter a specific approval phrase</p>
+<p>before the action proceeds and may cancel without an API request.</p>
+<h2>Storage and sharing</h2>
 <p>OAuth credentials and upload records are stored locally on the operator&#x27;s</p>
 <p>computer. OAuth client secrets and tokens are excluded from the source-code</p>
-<p>repository. Project Bonga does not sell personal information or share</p>
-<p>authorised YouTube data with advertisers or unrelated third parties.</p>
-<h2>Control and consent</h2>
-<p>Before an upload or scheduling action, Project Bonga displays the selected</p>
-<p>channel, video, title, privacy setting and publication time. The user must give</p>
-<p>an explicit approval before the action proceeds.</p>
+<p>repository.</p>
+<p>Project Bonga does not sell authorised data, share it with advertisers or</p>
+<p>provide it to unrelated third parties. The public compliance website uses no</p>
+<p>cookies, advertising or third-party analytics.</p>
+<h2>Revocation, disconnection and deletion</h2>
 <p>The user may revoke Project Bonga&#x27;s Google account access at:</p>
 <p><a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a></p>
-<p>The user may request deletion of locally stored authorisation and upload</p>
-<p>records by contacting matthewowen1@gmail.com. Requests will be handled within 30</p>
-<p>days.</p>
+<p>Project Bonga provides a local `disconnect-youtube.ps1` command. It deletes the</p>
+<p>local OAuth token, local policy-consent record and locally stored YouTube API</p>
+<p>upload and release records. It preserves local videos, scripts, research and</p>
+<p>licensed assets.</p>
+<p>Deleting Project Bonga&#x27;s local data does not delete any video or other data</p>
+<p>stored by YouTube. Data stored by YouTube must be deleted through YouTube or</p>
+<p>another authorised client that supports deletion.</p>
+<p>A deletion request may also be sent to matthewowen1@gmail.com. Valid requests will be</p>
+<p>completed as soon as possible and within seven calendar days.</p>
 <h2>Retention</h2>
-<p>OAuth tokens are retained only while Project Bonga remains authorised. Upload</p>
-<p>records are retained for the creator&#x27;s production audit trail and can be</p>
-<p>deleted on request. Authorised API data is not retained indefinitely without a</p>
-<p>continuing operational need.</p>
+<p>OAuth tokens are retained only while Project Bonga remains authorised. Local</p>
+<p>YouTube API records are retained only for the creator&#x27;s operational audit</p>
+<p>trail and are deleted when the user invokes the deletion control, withdraws</p>
+<p>authorisation or makes a valid deletion request.</p>
 <h2>Security</h2>
-<p>Project Bonga stores credentials locally, does not embed them in public source</p>
-<p>code and limits OAuth access to the scopes needed for its stated function.</p>
+<p>Project Bonga stores credentials locally, excludes secrets and tokens from</p>
+<p>version control, uses Google&#x27;s OAuth flow and requests only the YouTube upload</p>
+<p>scope needed for its stated purpose.</p>
 <h2>Contact</h2>
 <p>Matthew Owen</p>
 <p>matthewowen1@gmail.com</p>
