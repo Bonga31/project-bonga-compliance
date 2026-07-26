@@ -103,11 +103,13 @@
 <p>cookies, advertising or third-party analytics.</p>
 <h2>Revocation, disconnection and deletion</h2>
 <p>The user may revoke Project Bonga&#x27;s Google account access at:</p>
-<p><a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a></p>
-<p>Project Bonga provides a local `disconnect-youtube.ps1` command. It deletes the</p>
-<p>local OAuth token, local policy-consent record and locally stored YouTube API</p>
-<p>upload and release records. It preserves local videos, scripts, research and</p>
-<p>licensed assets.</p>
+<p><a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a></p>
+<p>Project Bonga provides a local `disconnect-youtube.ps1` command. When the user</p>
+<p>confirms the action, the command first programmatically revokes Project Bonga&#x27;s</p>
+<p>OAuth grant using Google&#x27;s revocation endpoint. After Google confirms revocation</p>
+<p>or reports that the token is already invalid, it deletes the local OAuth token,</p>
+<p>local policy-consent record and locally stored YouTube API upload and release</p>
+<p>records. It preserves local videos, scripts, research and licensed assets.</p>
 <p>Deleting Project Bonga&#x27;s local data does not delete any video or other data</p>
 <p>stored by YouTube. Data stored by YouTube must be deleted through YouTube or</p>
 <p>another authorised client that supports deletion.</p>
